@@ -5,10 +5,10 @@ import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 
 dotenv.config({
-  path: "./.env",
+  path: "./public/temp/.env",
 });
 
-console.log(process.env.Name);
+console.log(`${process.env.Name}`);
 connectDB();
 
 // First Approach
